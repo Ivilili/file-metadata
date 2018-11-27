@@ -1,20 +1,33 @@
-/****** Main Styling ******/
+* {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	color: #222;
 	background-color: #ecf0f1;
 	text-align: center;
 }
 
 .container {
-	padding: 0;
-	margin-top: 40px;
+	background: #fff;
+	padding: 16px;
+	margin: auto;
+	margin-top: 60px;
+	height: 80%;
+	width: 80%;
+	box-shadow: 5px 0px 60px rgba(0, 0, 0, .2);
+}
+hr {
+	width: 80%;
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
 }
 
 .footer {
 	margin-top: 60px;
+	font-size: 14px;
 }
 
 ol {
@@ -34,13 +47,35 @@ input {
 	margin: 10px auto;
 }
 input#button {
-	width: 230px;
+	background-color: #273f87;
+	font-size: 16px;
+	margin-top: 20px;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 80%;
+	opacity: 1;
 }
+input#button:hover,
+input#inputfield:hover {
+	background-color: #203470;
+}
+input#inputfield {
+	background-color: #273f87;
+	font-size: 16px;
+	margin-top: 20px;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 80%;
+}
+
 .view {
 	position: relative;
 	margin: auto;
-	margin-top: 40px;
-	border: 1px solid #aaa;
+	margin-top: 10px;
 	padding: 20px;
 	width: 60%;
 	min-width: 400px;
