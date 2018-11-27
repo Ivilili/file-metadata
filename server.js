@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const multer = require('multer');
+const upload = multer({ dest: 'uploads/' });
 
 const app = express();
 
@@ -8,6 +10,10 @@ app.use('/public', express.static(process.cwd() + '/public'));
 
 app.get('/', function(req, res) {
 	res.sendFile(process.cwd() + '/views/index.html');
+});
+
+app.post('/api/upload', upload.single('upfile'), function(req, res, next) {
+	return res.json(req.file);
 });
 
 app.get('/hello', function(req, res) {
