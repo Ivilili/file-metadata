@@ -1,7 +1,5 @@
 # API Project: File Metadata Microservice for freeCodeCamp
 
-## Introduction 
-This is a simple D3 responsive donut chart in React app.
 
 ## Features
 
